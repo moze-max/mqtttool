@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mqtttool.MainPage"
+             Title="Home">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="About" Clicked="GotoAbout"/>
+        <ToolbarItem Text="Tcp" Clicked="GotoTCP"/>
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+        <Label Text="下面列出了您的订阅信息，希望可以帮到您。"/>
+        <Label
+            
+            x:Name="message"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="StartAndExpand"
+            FontSize="Body"
+            />
+        <Label
+            
+            x:Name="connetmg"
+            TextColor ="White"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            FontSize="Subtitle"  
+            
+            />
+        <Label
+          
+            x:Name="UserHello"
+            TextColor ="White"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            FontSize="Title"
+            />
+        <Label
+          
+            x:Name="ShowData"
+            TextColor ="White"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="Body"
+        />
+        <!--<Button
+        Text="To About Page"
+        Clicked="runtoAbout"
+        HorizontalOptions="CenterAndExpand"/>-->
+        <Button 
+            Text="自定义数据"
+            Clicked="GoToData"
+            />
+        
+        </VerticalStackLayout>
+
+
+
+
+</ContentPage>

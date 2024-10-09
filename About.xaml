@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mqtttool.About"
+             Title="About">
+    <VerticalStackLayout>
+        <Label 
+       Text="欢迎使用我们的软件" FontSize = "Large" HorizontalOptions="Center" VerticalOptions="Start"/>
+        <Label
+        x:Name="intriduce"
+        FontSize="Default"
+        HorizontalTextAlignment="Start"
+        VerticalTextAlignment="Start"
+        Margin="10"
+        Padding="10"
+        />
+        <Button
+   Text="返回展示页面"
+    Clicked="Back"
+/>
+
+    </VerticalStackLayout>
+</ContentPage>

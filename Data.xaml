@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mqtttool.Data"
+             Title="Data">
+    
+    <Grid>
+        <VerticalStackLayout>
+            
+            <Entry 
+            x:Name="Entry_broker"            
+            Placeholder="Your broker"
+            Completed="Entry_broker_Completed"
+            ClearButtonVisibility="WhileEditing"
+            IsSpellCheckEnabled="false"
+                ReturnType="Done"
+            />
+            <Entry
+            x:Name="Entry_port"
+            Placeholder="Your port"
+            Completed="Entry_port_Completed"
+            ClearButtonVisibility="WhileEditing"
+            IsSpellCheckEnabled="false"
+                 ReturnType="Done"
+            />
+            <Entry
+            x:Name="Entry_topic"
+            Placeholder="your topic"           
+            Completed="Entry_topic_Completed"
+            ClearButtonVisibility="WhileEditing"
+            IsSpellCheckEnabled="false"
+                 ReturnType="Done"
+            />
+
+            <Entry
+            x:Name="Entry_username"
+             ReturnType="Done"
+            Completed="Entry_username_Completed"
+            Placeholder="Your username"
+            ClearButtonVisibility="WhileEditing"
+            IsSpellCheckEnabled="false"
+            />
+            <Entry
+            x:Name="Entry_password"
+            Completed="Entry_password_Completed"
+            Placeholder="Your password"
+            ClearButtonVisibility="WhileEditing"
+            IsSpellCheckEnabled="false"
+                 ReturnType="Done"
+            />
+            <Entry
+                x:Name="Entry_crt"
+                Completed="Entry_crt_Completed"
+                Placeholder="Your crt"
+                ClearButtonVisibility="WhileEditing"
+                IsSpellCheckEnabled="false"
+                 ReturnType="Done"
+            />
+            <Button
+               Text="返回展示页面"
+                Clicked="Back"
+            />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
